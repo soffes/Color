@@ -12,6 +12,9 @@
 		21BBCF241F1C834A00AF9F14 /* ConformanceLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BBCF1C1F1C834A00AF9F14 /* ConformanceLevel.swift */; };
 		21BBCF251F1C834A00AF9F14 /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 21BBCF1E1F1C834A00AF9F14 /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21BBCF291F1C834F00AF9F14 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BBCF221F1C834A00AF9F14 /* ColorTests.swift */; };
+		21BBCF2B1F1C867700AF9F14 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BBCF2A1F1C867700AF9F14 /* Color+Hex.swift */; };
+		21BBCF2D1F1C86B000AF9F14 /* Color+Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BBCF2C1F1C86B000AF9F14 /* Color+Manipulation.swift */; };
+		21BBCF2F1F1C876700AF9F14 /* Color+WCAG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BBCF2E1F1C876700AF9F14 /* Color+WCAG.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 		21BBCF1F1F1C834A00AF9F14 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21BBCF201F1C834A00AF9F14 /* Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		21BBCF221F1C834A00AF9F14 /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
+		21BBCF2A1F1C867700AF9F14 /* Color+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		21BBCF2C1F1C86B000AF9F14 /* Color+Manipulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Manipulation.swift"; sourceTree = "<group>"; };
+		21BBCF2E1F1C876700AF9F14 /* Color+WCAG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+WCAG.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				21BBCF1B1F1C834A00AF9F14 /* Color.swift */,
+				21BBCF2E1F1C876700AF9F14 /* Color+WCAG.swift */,
+				21BBCF2A1F1C867700AF9F14 /* Color+Hex.swift */,
+				21BBCF2C1F1C86B000AF9F14 /* Color+Manipulation.swift */,
 				21BBCF1C1F1C834A00AF9F14 /* ConformanceLevel.swift */,
 			);
 			path = Sources;
@@ -214,6 +223,9 @@
 			files = (
 				21BBCF241F1C834A00AF9F14 /* ConformanceLevel.swift in Sources */,
 				21BBCF231F1C834A00AF9F14 /* Color.swift in Sources */,
+				21BBCF2D1F1C86B000AF9F14 /* Color+Manipulation.swift in Sources */,
+				21BBCF2F1F1C876700AF9F14 /* Color+WCAG.swift in Sources */,
+				21BBCF2B1F1C867700AF9F14 /* Color+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

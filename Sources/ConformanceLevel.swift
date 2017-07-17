@@ -6,29 +6,29 @@
 //  Copyright © 2017 Nothing Magical, Inc. All rights reserved.
 //
 
-import CoreGraphics
-
-/// Derived from the Web Content Accessibility Guidelines (WCAG) 2.0 conformance levels
+/// Derived from the Web Content Accessibility Guidelines (WCAG) 2.0 conformance 
+///
+/// From https://www.w3.org/TR/WCAG20
 public enum ConformanceLevel: Int {
 
 	// MARK: - Cases
 	
 	/// Failing score
 	///
-	/// Does not meet a WCAG 2.0 standard
+	/// Does not meet a WCAG 2.0 standard.
 	case fail
 
-	/// Minimum for large scale content
+	/// Minimum for large scale content.
 	///
 	/// From WCAG 2.0 § 1.4.3
 	case aaLarge
 
-	/// Minumm for regular scale content
+	/// Minumm for regular scale content.
 	///
 	/// From WCAG 2.0 § 1.4.3
 	case aa
 
-	/// Enhanced for regular scale content
+	/// Enhanced for regular scale content.
 	///
 	/// From WCAG 2.0 § 1.4.6
 	case aaa
@@ -36,7 +36,10 @@ public enum ConformanceLevel: Int {
 
 	// MARK: - Initializers
 
-	public init(contrastRatio: CGFloat) {
+	/// Create a ConformanceLevel from a contrast ratio.
+	///
+	/// - parameter contrastRatio: A value from 1.0-21.0
+	public init(contrastRatio: Double) {
 		if contrastRatio >= 7 {
 			self = .aaa
 			return
