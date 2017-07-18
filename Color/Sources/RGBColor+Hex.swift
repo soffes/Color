@@ -6,6 +6,12 @@
 //  Copyright © 2017 Sam Soffes. All rights reserved.
 //
 
+#if os(Linux)
+	import Glibc
+#else
+	import Darwin
+#endif
+
 extension RGBColor {
 	/// Initialize a color with a hex string.
 	public init?(hex string: String) {

@@ -6,6 +6,12 @@
 //  Copyright © 2017 Sam Soffes. All rights reserved.
 //
 
+#if os(Linux)
+	import Glibc
+#else
+	import Darwin
+#endif
+
 extension RGBColor {
 
 	/// Relative luminance
