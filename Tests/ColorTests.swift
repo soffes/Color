@@ -10,8 +10,8 @@ import XCTest
 import Color
 
 final class ColorTests: XCTestCase {
-	let color1 = Color(hex: "acf")!
-	let color2 = Color(hex: "222233")!
+	let color1 = RGBColor(hex: "acf")!
+	let color2 = RGBColor(hex: "222233")!
 
 	func testRelativeLuminance() {
 		XCTAssertEqualWithAccuracy(0.589, color1.relativeLuminance, accuracy: 0.001)
@@ -34,21 +34,21 @@ final class ColorTests: XCTestCase {
 	}
 
 	func testToHex() {
-		let red = Color(red: 1, green: 0, blue: 0, alpha: 1)
+		let red = RGBColor(red: 1, green: 0, blue: 0, alpha: 1)
 		XCTAssertEqual("ff0000", red.hex()!)
 
-		let green = Color(red: 0, green: 1, blue: 0, alpha: 1)
+		let green = RGBColor(red: 0, green: 1, blue: 0, alpha: 1)
 		XCTAssertEqual("00ff00", green.hex()!)
 
-		let blue = Color(red: 0, green: 0, blue: 1, alpha: 1)
+		let blue = RGBColor(red: 0, green: 0, blue: 1, alpha: 1)
 		XCTAssertEqual("0000ff", blue.hex()!)
 
-		let purple = Color(red: 110 / 255, green: 61 / 255, blue: 195 / 255, alpha: 1)
+		let purple = RGBColor(red: 110 / 255, green: 61 / 255, blue: 195 / 255, alpha: 1)
 		XCTAssertEqual("6e3dc3", purple.hex()!)
 	}
 
 	func testFromHex() {
-		let purple = Color(hex: "6e3dc3")!
-		XCTAssertEqual(purple, Color(red: 110 / 255, green: 61 / 255, blue: 195 / 255, alpha: 1))
+		let purple = RGBColor(hex: "6e3dc3")!
+		XCTAssertEqual(purple, RGBColor(red: 110 / 255, green: 61 / 255, blue: 195 / 255, alpha: 1))
 	}
 }
