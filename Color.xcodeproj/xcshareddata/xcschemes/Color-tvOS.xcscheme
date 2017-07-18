@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21292D5F1F1EB0F3000BC512"
-               BuildableName = "Color-tvOS.framework"
+               BuildableName = "Color.framework"
                BlueprintName = "Color-tvOS"
                ReferencedContainer = "container:Color.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21292D671F1EB0F3000BC512"
-               BuildableName = "ColorTests-tvOS.xctest"
+               BuildableName = "ColorTests.xctest"
                BlueprintName = "ColorTests-tvOS"
                ReferencedContainer = "container:Color.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21292D5F1F1EB0F3000BC512"
-            BuildableName = "Color-tvOS.framework"
+            BuildableName = "Color.framework"
             BlueprintName = "Color-tvOS"
             ReferencedContainer = "container:Color.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21292D5F1F1EB0F3000BC512"
-            BuildableName = "Color-tvOS.framework"
+            BuildableName = "Color.framework"
             BlueprintName = "Color-tvOS"
             ReferencedContainer = "container:Color.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21292D5F1F1EB0F3000BC512"
-            BuildableName = "Color-tvOS.framework"
+            BuildableName = "Color.framework"
             BlueprintName = "Color-tvOS"
             ReferencedContainer = "container:Color.xcodeproj">
          </BuildableReference>

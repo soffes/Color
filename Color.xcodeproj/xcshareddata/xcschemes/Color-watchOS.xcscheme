@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21292D521F1EB0E9000BC512"
-               BuildableName = "Color-watchOS.framework"
+               BuildableName = "Color.framework"
                BlueprintName = "Color-watchOS"
                ReferencedContainer = "container:Color.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21292D521F1EB0E9000BC512"
-            BuildableName = "Color-watchOS.framework"
+            BuildableName = "Color.framework"
             BlueprintName = "Color-watchOS"
             ReferencedContainer = "container:Color.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21292D521F1EB0E9000BC512"
-            BuildableName = "Color-watchOS.framework"
+            BuildableName = "Color.framework"
             BlueprintName = "Color-watchOS"
             ReferencedContainer = "container:Color.xcodeproj">
          </BuildableReference>
