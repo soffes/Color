@@ -2,7 +2,7 @@
 
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Color utilities for macOS.
+Color utilities in pure Swift for macOS, iOS, watchOS, and tvOS.
 
 
 ## Thanks
