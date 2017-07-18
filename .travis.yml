@@ -1,0 +1,31 @@
+matrix:
+  include:
+    # Linux
+    - os: linux
+      script: swift test
+
+    # Darwin
+    - os: osx
+      osx_image: xcode8.3
+      script: swift test
+
+    # macOS
+    - os: osx
+      osx_image: xcode8.3
+      language: objective-c
+      install: gem install xcpretty
+      script: xcodebuild test -project Color.xcodeproj -scheme Color-macOS | xcpretty --color; exit ${PIPESTATUS[0]}
+
+    # iOS
+    - os: osx
+      osx_image: xcode8.3
+      language: objective-c
+      install: gem install xcpretty
+      script: xcodebuild test -project Color.xcodeproj -scheme Color-iOS | xcpretty --color; exit ${PIPESTATUS[0]}
+
+    # tvOS
+    - os: osx
+      osx_image: xcode8.3
+      language: objective-c
+      install: gem install xcpretty
+      script: xcodebuild test -project Color.xcodeproj -scheme Color-tvOS | xcpretty --color; exit ${PIPESTATUS[0]}
