@@ -25,22 +25,30 @@
 		}
 
 		public var hex: String {
-			return RGBColor(color: self).hex
+			return RGBColor(self).hex
 		}
 
 		public var relativeLuminance: CGFloat {
-			return CGFloat(RGBColor(color: self).relativeLuminance)
+			return CGFloat(RGBColor(self).relativeLuminance)
 		}
 
 		public func contrastRatio(to other: NSColor) -> CGFloat? {
-			let lhs = RGBColor(color: self)
-			let rhs = RGBColor(color: other)
+			let lhs = RGBColor(self)
+			let rhs = RGBColor(other)
 			return CGFloat(lhs.contrastRatio(to: rhs))
+		}
+
+		public var yiqLuma: CGFloat {
+			return CGFloat(RGBColor(self).yiqLuma)
+		}
+
+		public var isDark: Bool {
+			return RGBColor(self).isDark
 		}
 	}
 
 	extension RGBColor {
-		public init(color: NSColor, colorSpace: NSColorSpace = .genericRGB) {
+		public init(_ color: NSColor, colorSpace: NSColorSpace = .genericRGB) {
 			if colorSpace.colorSpaceModel != .RGB {
 				fatalError("Color space must have RGB model.")
 			}
