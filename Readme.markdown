@@ -41,7 +41,7 @@ Add the following to your `dependencies` in your Package.swift:
 
 Color provides structs for different color models. Currently only RGB and HSL are supported. Most color calculations are specific to a color model. For example, darkening a color is only available for HSL colors and not RGB colors. If you'd like to darken an RGB color, you’ll need to convert to HSL first. Here’s an example:
 
-```
+```swift
 let rgb = RGBColor(red: 1, green: 0, blue: 0)
 let hsl = HSLColor(rgb: rgb)
 let darkerRed = hsl.darkening()
