@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		210C71B61F1E893200A1B983 /* RGBColor+YIQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C71B51F1E893200A1B983 /* RGBColor+YIQ.swift */; };
 		210C71B81F1E8C6E00A1B983 /* HSLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C71B71F1E8C6E00A1B983 /* HSLColor.swift */; };
-		210C71BA1F1E8D5800A1B983 /* RGBColor+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C71B91F1E8D5800A1B983 /* RGBColor+Conversion.swift */; };
 		210C71BC1F1E91CA00A1B983 /* SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C71BB1F1E91CA00A1B983 /* SystemColor.swift */; };
+		210C71C11F1E9B7C00A1B983 /* RGBColor+CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C71C01F1E9B7C00A1B983 /* RGBColor+CSS.swift */; };
 		21BBCF0A1F1C833000AF9F14 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BBCF001F1C833000AF9F14 /* Color.framework */; };
 		21BBCF231F1C834A00AF9F14 /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BBCF1B1F1C834A00AF9F14 /* RGBColor.swift */; };
 		21BBCF241F1C834A00AF9F14 /* ConformanceLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BBCF1C1F1C834A00AF9F14 /* ConformanceLevel.swift */; };
@@ -33,8 +33,8 @@
 /* Begin PBXFileReference section */
 		210C71B51F1E893200A1B983 /* RGBColor+YIQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RGBColor+YIQ.swift"; sourceTree = "<group>"; };
 		210C71B71F1E8C6E00A1B983 /* HSLColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSLColor.swift; sourceTree = "<group>"; };
-		210C71B91F1E8D5800A1B983 /* RGBColor+Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RGBColor+Conversion.swift"; sourceTree = "<group>"; };
 		210C71BB1F1E91CA00A1B983 /* SystemColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemColor.swift; sourceTree = "<group>"; };
+		210C71C01F1E9B7C00A1B983 /* RGBColor+CSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RGBColor+CSS.swift"; sourceTree = "<group>"; };
 		21BBCF001F1C833000AF9F14 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BBCF091F1C833000AF9F14 /* ColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BBCF1B1F1C834A00AF9F14 /* RGBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
@@ -89,10 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				21BBCF1B1F1C834A00AF9F14 /* RGBColor.swift */,
-				210C71B91F1E8D5800A1B983 /* RGBColor+Conversion.swift */,
 				21BBCF2E1F1C876700AF9F14 /* RGBColor+WCAG.swift */,
 				21BBCF2A1F1C867700AF9F14 /* RGBColor+Hex.swift */,
 				210C71B51F1E893200A1B983 /* RGBColor+YIQ.swift */,
+				210C71C01F1E9B7C00A1B983 /* RGBColor+CSS.swift */,
 				210C71B71F1E8C6E00A1B983 /* HSLColor.swift */,
 				21BBCF1C1F1C834A00AF9F14 /* ConformanceLevel.swift */,
 				210C71BB1F1E91CA00A1B983 /* SystemColor.swift */,
@@ -231,13 +231,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				210C71BC1F1E91CA00A1B983 /* SystemColor.swift in Sources */,
+				210C71C11F1E9B7C00A1B983 /* RGBColor+CSS.swift in Sources */,
 				21BBCF241F1C834A00AF9F14 /* ConformanceLevel.swift in Sources */,
 				21BBCF231F1C834A00AF9F14 /* RGBColor.swift in Sources */,
 				21BBCF2F1F1C876700AF9F14 /* RGBColor+WCAG.swift in Sources */,
 				210C71B61F1E893200A1B983 /* RGBColor+YIQ.swift in Sources */,
 				21BBCF2B1F1C867700AF9F14 /* RGBColor+Hex.swift in Sources */,
 				210C71B81F1E8C6E00A1B983 /* HSLColor.swift in Sources */,
-				210C71BA1F1E8D5800A1B983 /* RGBColor+Conversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

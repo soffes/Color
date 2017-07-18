@@ -55,7 +55,7 @@ final class ColorTests: XCTestCase {
 	func testConvertToHSL() {
 		let rgb = RGBColor(red: 0.941, green: 0.785, blue: 0.053)
 		let hsl = HSLColor(hue: 49.5 / 360, saturation: 0.893, lightness: 0.497)
-		let converted = rgb.hslColor
+		let converted = HSLColor(rgb: rgb)
 		XCTAssertEqualWithAccuracy(hsl.hue, converted.hue, accuracy: 0.1)
 		XCTAssertEqualWithAccuracy(hsl.saturation, converted.saturation, accuracy: 0.1)
 		XCTAssertEqualWithAccuracy(hsl.lightness, converted.lightness, accuracy: 0.1)
