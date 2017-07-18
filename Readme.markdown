@@ -1,10 +1,8 @@
 # Color
 
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Color.svg)](https://img.shields.io/cocoapods/v/Color.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Platform](https://img.shields.io/cocoapods/p/Color.svg?style=flat)](http://cocoadocs.org/docsets/Color)
 
-Color utilities in pure Swift for macOS, iOS, watchOS, and tvOS. Color supports Carthage, CocoaPods, and Swift Package Manager.
+Color utilities in pure Swift for macOS, iOS, watchOS, and tvOS. Color supports Carthage and Swift Package Manager.
 
 Color was abstracted from [Contrast](https://usecontrast.com), a macOS app for checking designs for accessible color combinations.
 
@@ -13,19 +11,10 @@ Color was abstracted from [Contrast](https://usecontrast.com), a macOS app for c
 
 ### Carthage
 
-TAdd the following to your Cartfile:
+Add the following to your Cartfile:
 
 ```ruby
 github "soffes/Color"
-```
-
-
-### CocoaPods
-
-Add the following to your Podfile:
-
-```ruby
-pod 'Color'
 ```
 
 ### Swift Package Manager
