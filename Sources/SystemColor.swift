@@ -10,6 +10,9 @@
 	import AppKit
 
 	extension NSColor {
+
+		// MARK: - RGB
+
 		public convenience init(rgb color: RGBColor, colorSpace: NSColorSpace = .genericRGB) {
 			if colorSpace.colorSpaceModel != .RGB {
 				fatalError("Color space must have RGB model.")
@@ -45,6 +48,29 @@
 		public var isDark: Bool {
 			return RGBColor(self).isDark
 		}
+
+
+		// MARK: - HSL
+
+		public convenience init(hsl color: HSLColor, colorSpace: NSColorSpace = .genericRGB) {
+			self.init(rgb: RGBColor(hslColor: color), colorSpace: colorSpace)
+		}
+
+		public func lightening(by ratio: Double = 0.01) -> NSColor {
+			return NSColor(hsl: HSLColor(self).lightening(by: ratio))
+		}
+
+		public func darkening(by ratio: Double = 0.01) -> NSColor {
+			return NSColor(hsl: HSLColor(self).darkening(by: ratio))
+		}
+
+		public func saturating(by ratio: Double = 0.01) -> NSColor {
+			return NSColor(hsl: HSLColor(self).saturating(by: ratio))
+		}
+
+		public func desaturating(by ratio: Double = 0.01) -> NSColor {
+			return NSColor(hsl: HSLColor(self).desaturating(by: ratio))
+		}
 	}
 
 	extension RGBColor {
@@ -69,6 +95,13 @@
 			convertedColor.getRed(&red, green: &green, blue: &blue, alpha: nil)
 
 			self.init(red: Double(red), green: Double(green), blue: Double(blue))
+		}
+	}
+
+	extension HSLColor {
+		public init(_ color: NSColor, colorSpace: NSColorSpace = .genericRGB) {
+			// TODO: Do direct conversion
+			self.init(rgb: RGBColor(color))
 		}
 	}
 #endif
