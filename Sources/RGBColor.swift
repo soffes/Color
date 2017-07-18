@@ -7,29 +7,31 @@
 //
 
 /// Portable, pure Swift color representation.
-public struct RGBColor: Color {
+public struct RGBColor {
 
 	// MARK: - Properties
 
 	public var red: Double
 	public var green: Double
 	public var blue: Double
-	public var alpha: Double
 
 
 	// MARK: - Initializers
 
-	public init(red: Double, green: Double, blue: Double, alpha: Double = 1) {
+	public init(red: Double, green: Double, blue: Double) {
 		self.red = red
 		self.green = green
 		self.blue = blue
-		self.alpha = alpha
+	}
+
+	public init(white: Double) {
+		self.init(red: white, green: white, blue: white)
 	}
 }
 
 
 extension RGBColor: Equatable {
 	public static func == (lhs: RGBColor, rhs: RGBColor) -> Bool {
-		return lhs.red == rhs.red && lhs.green == rhs.green && lhs.blue == rhs.blue && lhs.alpha == rhs.alpha
+		return lhs.red == rhs.red && lhs.green == rhs.green && lhs.blue == rhs.blue
 	}
 }

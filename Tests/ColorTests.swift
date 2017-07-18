@@ -34,21 +34,30 @@ final class ColorTests: XCTestCase {
 	}
 
 	func testToHex() {
-		let red = RGBColor(red: 1, green: 0, blue: 0, alpha: 1)
-		XCTAssertEqual("ff0000", red.hex()!)
+		let red = RGBColor(red: 1.0, green: 0.0, blue: 0.0)
+		XCTAssertEqual("ff0000", red.hex!)
 
-		let green = RGBColor(red: 0, green: 1, blue: 0, alpha: 1)
-		XCTAssertEqual("00ff00", green.hex()!)
+		let green = RGBColor(red: 0.0, green: 1.0, blue: 0.0)
+		XCTAssertEqual("00ff00", green.hex!)
 
-		let blue = RGBColor(red: 0, green: 0, blue: 1, alpha: 1)
-		XCTAssertEqual("0000ff", blue.hex()!)
+		let blue = RGBColor(red: 0.0, green: 0.0, blue: 1.0)
+		XCTAssertEqual("0000ff", blue.hex!)
 
-		let purple = RGBColor(red: 110 / 255, green: 61 / 255, blue: 195 / 255, alpha: 1)
-		XCTAssertEqual("6e3dc3", purple.hex()!)
+		let purple = RGBColor(red: 110.0 / 255.0, green: 61.0 / 255.0, blue: 195.0 / 255.0)
+		XCTAssertEqual("6e3dc3", purple.hex!)
 	}
 
 	func testFromHex() {
 		let purple = RGBColor(hex: "6e3dc3")!
-		XCTAssertEqual(purple, RGBColor(red: 110 / 255, green: 61 / 255, blue: 195 / 255, alpha: 1))
+		XCTAssertEqual(purple, RGBColor(red: 110 / 255, green: 61 / 255, blue: 195 / 255))
+	}
+
+	func testConvertToHSL() {
+		let rgb = RGBColor(red: 0.941, green: 0.785, blue: 0.053)
+		let hsl = HSLColor(hue: 49.5 / 360, saturation: 0.893, lightness: 0.497)
+		let converted = rgb.hslColor
+		XCTAssertEqualWithAccuracy(hsl.hue, converted.hue, accuracy: 0.1)
+		XCTAssertEqualWithAccuracy(hsl.saturation, converted.saturation, accuracy: 0.1)
+		XCTAssertEqualWithAccuracy(hsl.lightness, converted.lightness, accuracy: 0.1)
 	}
 }

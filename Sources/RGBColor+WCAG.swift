@@ -1,12 +1,12 @@
 //
-//  Color+WCAG.swift
+//  RGBColor+WCAG.swift
 //  Color
 //
 //  Created by Sam Soffes on 7/17/17.
 //  Copyright © 2017 Sam Soffes. All rights reserved.
 //
 
-extension Color {
+extension RGBColor {
 
 	/// Relative luminance
 	///
@@ -24,7 +24,7 @@ extension Color {
 	/// - parameter to: the color to compare the receiver to
 	///
 	/// From https://www.w3.org/TR/WCAG20/#contrast-ratiodef
-	public func contrastRatio(to other: Color) -> Double {
+	public func contrastRatio(to other: RGBColor) -> Double {
 		let lum1 = relativeLuminance
 		let lum2 = other.relativeLuminance
 
