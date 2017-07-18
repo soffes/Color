@@ -35,7 +35,7 @@
 			return CGFloat(RGBColor(self).relativeLuminance)
 		}
 
-		public func contrastRatio(to other: NSColor) -> CGFloat? {
+		public func contrastRatio(to other: NSColor) -> CGFloat {
 			let lhs = RGBColor(self)
 			let rhs = RGBColor(other)
 			return CGFloat(lhs.contrastRatio(to: rhs))
@@ -102,6 +102,12 @@
 		public init(_ color: NSColor, colorSpace: NSColorSpace = .genericRGB) {
 			// TODO: Do direct conversion
 			self.init(rgb: RGBColor(color))
+		}
+	}
+
+	extension ConformanceLevel {
+		public init(contrastRatio: CGFloat) {
+			self.init(contrastRatio: Double(contrastRatio))
 		}
 	}
 #endif
