@@ -56,20 +56,20 @@
 			self.init(rgb: RGBColor(hslColor: color), colorSpace: colorSpace)
 		}
 
-		public func lightening(by ratio: Double = 0.01) -> NSColor {
-			return NSColor(hsl: HSLColor(self).lightening(by: ratio))
+		public func lightening(by ratio: CGFloat = 0.01) -> NSColor {
+			return NSColor(hsl: HSLColor(self).lightening(by: Double(ratio)))
 		}
 
-		public func darkening(by ratio: Double = 0.01) -> NSColor {
-			return NSColor(hsl: HSLColor(self).darkening(by: ratio))
+		public func darkening(by ratio: CGFloat = 0.01) -> NSColor {
+			return NSColor(hsl: HSLColor(self).darkening(by: Double(ratio)))
 		}
 
-		public func saturating(by ratio: Double = 0.01) -> NSColor {
-			return NSColor(hsl: HSLColor(self).saturating(by: ratio))
+		public func saturating(by ratio: CGFloat = 0.01) -> NSColor {
+			return NSColor(hsl: HSLColor(self).saturating(by: Double(ratio)))
 		}
 
-		public func desaturating(by ratio: Double = 0.01) -> NSColor {
-			return NSColor(hsl: HSLColor(self).desaturating(by: ratio))
+		public func desaturating(by ratio: CGFloat = 0.01) -> NSColor {
+			return NSColor(hsl: HSLColor(self).desaturating(by: Double(ratio)))
 		}
 	}
 
