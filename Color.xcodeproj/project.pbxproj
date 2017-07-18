@@ -132,9 +132,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		21BBCEFF1F1C833000AF9F14 /* Color */ = {
+		21BBCEFF1F1C833000AF9F14 /* Color-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21BBCF141F1C833000AF9F14 /* Build configuration list for PBXNativeTarget "Color" */;
+			buildConfigurationList = 21BBCF141F1C833000AF9F14 /* Build configuration list for PBXNativeTarget "Color-macOS" */;
 			buildPhases = (
 				21BBCEFB1F1C833000AF9F14 /* Sources */,
 				21BBCEFC1F1C833000AF9F14 /* Frameworks */,
@@ -145,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = Color;
+			name = "Color-macOS";
 			productName = Color;
 			productReference = 21BBCF001F1C833000AF9F14 /* Color.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		21BBCF081F1C833000AF9F14 /* ColorTests */ = {
+		21BBCF081F1C833000AF9F14 /* ColorTests-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21BBCF171F1C833000AF9F14 /* Build configuration list for PBXNativeTarget "ColorTests" */;
+			buildConfigurationList = 21BBCF171F1C833000AF9F14 /* Build configuration list for PBXNativeTarget "ColorTests-macOS" */;
 			buildPhases = (
 				21BBCF051F1C833000AF9F14 /* Sources */,
 				21BBCF061F1C833000AF9F14 /* Frameworks */,
@@ -163,7 +163,7 @@
 			dependencies = (
 				21BBCF0C1F1C833000AF9F14 /* PBXTargetDependency */,
 			);
-			name = ColorTests;
+			name = "ColorTests-macOS";
 			productName = ColorTests;
 			productReference = 21BBCF091F1C833000AF9F14 /* ColorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -202,8 +202,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21BBCEFF1F1C833000AF9F14 /* Color */,
-				21BBCF081F1C833000AF9F14 /* ColorTests */,
+				21BBCEFF1F1C833000AF9F14 /* Color-macOS */,
+				21BBCF081F1C833000AF9F14 /* ColorTests-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -254,7 +254,7 @@
 /* Begin PBXTargetDependency section */
 		21BBCF0C1F1C833000AF9F14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 21BBCEFF1F1C833000AF9F14 /* Color */;
+			target = 21BBCEFF1F1C833000AF9F14 /* Color-macOS */;
 			targetProxy = 21BBCF0B1F1C833000AF9F14 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -373,7 +373,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.color;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Color;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -394,7 +394,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.color;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Color;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -409,7 +409,7 @@
 				INFOPLIST_FILE = "Support/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.color.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ColorTests;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -423,7 +423,7 @@
 				INFOPLIST_FILE = "Support/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.color.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ColorTests;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -440,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21BBCF141F1C833000AF9F14 /* Build configuration list for PBXNativeTarget "Color" */ = {
+		21BBCF141F1C833000AF9F14 /* Build configuration list for PBXNativeTarget "Color-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21BBCF151F1C833000AF9F14 /* Debug */,
@@ -449,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21BBCF171F1C833000AF9F14 /* Build configuration list for PBXNativeTarget "ColorTests" */ = {
+		21BBCF171F1C833000AF9F14 /* Build configuration list for PBXNativeTarget "ColorTests-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21BBCF181F1C833000AF9F14 /* Debug */,
