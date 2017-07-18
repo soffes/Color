@@ -35,16 +35,16 @@ final class ColorTests: XCTestCase {
 
 	func testToHex() {
 		let red = RGBColor(red: 1.0, green: 0.0, blue: 0.0)
-		XCTAssertEqual("ff0000", red.hex!)
+		XCTAssertEqual("ff0000", red.hex)
 
 		let green = RGBColor(red: 0.0, green: 1.0, blue: 0.0)
-		XCTAssertEqual("00ff00", green.hex!)
+		XCTAssertEqual("00ff00", green.hex)
 
 		let blue = RGBColor(red: 0.0, green: 0.0, blue: 1.0)
-		XCTAssertEqual("0000ff", blue.hex!)
+		XCTAssertEqual("0000ff", blue.hex)
 
 		let purple = RGBColor(red: 110.0 / 255.0, green: 61.0 / 255.0, blue: 195.0 / 255.0)
-		XCTAssertEqual("6e3dc3", purple.hex!)
+		XCTAssertEqual("6e3dc3", purple.hex)
 	}
 
 	func testFromHex() {
