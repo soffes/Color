@@ -33,11 +33,11 @@ matrix:
     osx_image: xcode8.3
     language: objective-c
     install: gem install xcpretty
-    script: xcodebuild test -project Color.xcodeproj -scheme Color-iOS | xcpretty --color; exit ${PIPESTATUS[0]}
+    script: xcodebuild test -project Color.xcodeproj -scheme Color-iOS -destination "platform=iOS Simulator,name=iPhone SE" | xcpretty --color; exit ${PIPESTATUS[0]}
 
   # tvOS
   - os: osx
     osx_image: xcode8.3
     language: objective-c
     install: gem install xcpretty
-    script: xcodebuild test -project Color.xcodeproj -scheme Color-tvOS | xcpretty --color; exit ${PIPESTATUS[0]}
+    script: xcodebuild test -project Color.xcodeproj -scheme Color-tvOS -destination "platform=tvOS Simulator,name=Apple TV 1080p" | xcpretty --color; exit ${PIPESTATUS[0]}
