@@ -6,10 +6,15 @@ matrix:
     sudo: required
     dist: trusty
     install:
-    - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
+    - sudo apt-get install -y git python-dev libcurl3 clang
+    - git clone https://github.com/kylef/swiftenv.git ~/.swiftenv
+    - echo 'export SWIFTENV_ROOT="$HOME/.swiftenv"' >> ~/.bash_profile
+    - echo 'export PATH="$SWIFTENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+    - echo 'eval "$(swiftenv init -)"' >> ~/.bash_profile
+    - source ~/.bash_profile
+    - swiftenv install 3.1
     script:
-    - . ~/.swiftenv/init
-    - swift build
+    - swift test
 
   # Darwin
   - os: osx
