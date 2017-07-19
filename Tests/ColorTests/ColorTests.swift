@@ -18,8 +18,8 @@ final class ColorTests: XCTestCase {
 		("testConvertToHSL", testConvertToHSL)
 	]
 
-	let color1 = RGBColor(red: 170 / 255, green: 204 / 255, blue: 1)
-	let color2 = RGBColor(red: 34 / 255, green: 34 / 255, blue: 51 / 255)
+	let color1 = RGBColor(red: 170.0 / 255.0, green: 204.0 / 255.0, blue: 1)
+	let color2 = RGBColor(red: 34.0 / 255.0, green: 34.0 / 255.0, blue: 51.0 / 255.0)
 
 	func testRelativeLuminance() {
 		XCTAssertEqualWithAccuracy(0.589, color1.relativeLuminance, accuracy: 0.001)
