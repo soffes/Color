@@ -1,6 +1,9 @@
 # Color
 
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Version](https://img.shields.io/github/release/soffes/Color.svg)](https://github.com/soffes/Color/releases)
+[![Build Status](https://travis-ci.org/soffes/Color.svg?branch=master)](https://travis-ci.org/soffes/Color)
+![Swift Version](https://img.shields.io/badge/swift-3.1-orange.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Color utilities in pure Swift for macOS, iOS, watchOS, and tvOS. Color supports Carthage and Swift Package Manager.
 
