@@ -10,8 +10,16 @@ import XCTest
 import Color
 
 final class ColorTests: XCTestCase {
-	let color1 = RGBColor(hex: "acf")!
-	let color2 = RGBColor(hex: "222233")!
+	static let allTests = [
+		("testRelativeLuminance", testRelativeLuminance),
+		("testContrastRatio", testContrastRatio),
+		("testYIQ", testYIQ),
+		("testIsDark", testIsDark),
+		("testConvertToHSL", testConvertToHSL)
+	]
+
+	let color1 = RGBColor(red: 170 / 255, green: 204 / 255, blue: 1)
+	let color2 = RGBColor(red: 34 / 255, green: 34 / 255, blue: 51 / 255)
 
 	func testRelativeLuminance() {
 		XCTAssertEqualWithAccuracy(0.589, color1.relativeLuminance, accuracy: 0.001)
@@ -33,24 +41,26 @@ final class ColorTests: XCTestCase {
 		XCTAssertEqual(true, color2.isDark)
 	}
 
-	func testToHex() {
-		let red = RGBColor(red: 1.0, green: 0.0, blue: 0.0)
-		XCTAssertEqual("ff0000", red.hex)
+	#if !os(Linux)
+		func testToHex() {
+			let red = RGBColor(red: 1.0, green: 0.0, blue: 0.0)
+			XCTAssertEqual("ff0000", red.hex)
 
-		let green = RGBColor(red: 0.0, green: 1.0, blue: 0.0)
-		XCTAssertEqual("00ff00", green.hex)
+			let green = RGBColor(red: 0.0, green: 1.0, blue: 0.0)
+			XCTAssertEqual("00ff00", green.hex)
 
-		let blue = RGBColor(red: 0.0, green: 0.0, blue: 1.0)
-		XCTAssertEqual("0000ff", blue.hex)
+			let blue = RGBColor(red: 0.0, green: 0.0, blue: 1.0)
+			XCTAssertEqual("0000ff", blue.hex)
 
-		let purple = RGBColor(red: 110.0 / 255.0, green: 61.0 / 255.0, blue: 195.0 / 255.0)
-		XCTAssertEqual("6e3dc3", purple.hex)
-	}
+			let purple = RGBColor(red: 110.0 / 255.0, green: 61.0 / 255.0, blue: 195.0 / 255.0)
+			XCTAssertEqual("6e3dc3", purple.hex)
+		}
 
-	func testFromHex() {
-		let purple = RGBColor(hex: "6e3dc3")!
-		XCTAssertEqual(purple, RGBColor(red: 110 / 255, green: 61 / 255, blue: 195 / 255))
-	}
+		func testFromHex() {
+			let purple = RGBColor(hex: "6e3dc3")!
+			XCTAssertEqual(purple, RGBColor(red: 110 / 255, green: 61 / 255, blue: 195 / 255))
+		}
+	#endif
 
 	func testConvertToHSL() {
 		let rgb = RGBColor(red: 0.941, green: 0.785, blue: 0.053)

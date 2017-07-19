@@ -5,3 +5,5 @@
 *.pbxuser
 *.xcworkspace
 *.moved-aside/
+.vagrant
+Vagrantfile
