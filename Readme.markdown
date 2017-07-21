@@ -5,9 +5,9 @@
 ![Swift Version](https://img.shields.io/badge/swift-3.1-orange.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Color utilities in pure Swift for macOS, iOS, watchOS, and tvOS. Color supports Carthage and Swift Package Manager.
+Color utilities in pure Swift for macOS, iOS, watchOS, and tvOS. Color supports Carthage and Swift Package Manager. It is also [tested](https://travis-ci.org/soffes/Color) on Linux.
 
-Color was abstracted from [Contrast](https://usecontrast.com), a macOS app for checking designs for accessible color combinations.
+**Color was abstracted from [Contrast](https://usecontrast.com), a macOS app for checking designs for accessible color combinations.**
 
 
 ## Installation
