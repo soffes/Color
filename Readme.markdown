@@ -48,7 +48,33 @@ let rgb = RGBColor(hex: "0f0")!
 rgb.hex // "00ff00"
 ```
 
-RGB colors also have [WCAG 2.0](https://www.w3.org/TR/WCAG20) calculations.
+
+### NSColor & UIColor
+
+There are convenience methods on `NSColor` & `UIColor` if you are working in a Cocoa application. Each color model (`RGBColor`, `HSLColor`, etc.) has an extension for `SystemColorType` which is either `NSColor` or `UIColor` depending on the platform. Here's a few examples:
+
+```swift
+UIColor.red.darkening()
+UIColor.green.desaturating()
+NSColor.blue.isDark
+```
+
+
+### WCAG
+
+RGB colors also have [WCAG 2.0](https://www.w3.org/TR/WCAG20) calculations. First, calculate a contrast ratio:
+
+```swift
+let color1 = RGBColor(red: 170.0 / 255.0, green: 204.0 / 255.0, blue: 1)
+let color2 = RGBColor(red: 34.0 / 255.0, green: 34.0 / 255.0, blue: 51.0 / 255.0)
+let contrastRatio = color1.contrastRatio(to: color2) // 9.51
+```
+
+Now, you can check the conformance level:
+
+```swift
+ConformanceLevel(contrastRatio: contrastRatio) // .aaa
+```
 
 
 ## Thanks

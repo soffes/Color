@@ -52,6 +52,26 @@
 		21292D941F1EB112000BC512 /* SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C71D11F1EA93000A1B983 /* SystemColor.swift */; };
 		21292D951F1EB116000BC512 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C71E61F1EABD500A1B983 /* ColorTests.swift */; };
 		21292D961F1EB117000BC512 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C71E61F1EABD500A1B983 /* ColorTests.swift */; };
+		219263A21F30CC16009F0118 /* RGBColor+NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263A11F30CC16009F0118 /* RGBColor+NSColor.swift */; };
+		219263A41F30CC3E009F0118 /* HSLColor+NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263A31F30CC3E009F0118 /* HSLColor+NSColor.swift */; };
+		219263A61F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263A51F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift */; };
+		219263A71F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263A51F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift */; };
+		219263A81F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263A51F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift */; };
+		219263A91F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263A51F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift */; };
+		219263AB1F30CE06009F0118 /* RGBColor+SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263AA1F30CE06009F0118 /* RGBColor+SystemColor.swift */; };
+		219263AC1F30CE06009F0118 /* RGBColor+SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263AA1F30CE06009F0118 /* RGBColor+SystemColor.swift */; };
+		219263AD1F30CE06009F0118 /* RGBColor+SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263AA1F30CE06009F0118 /* RGBColor+SystemColor.swift */; };
+		219263AE1F30CE06009F0118 /* RGBColor+SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263AA1F30CE06009F0118 /* RGBColor+SystemColor.swift */; };
+		219263B01F30CE37009F0118 /* HSLColor+SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263AF1F30CE37009F0118 /* HSLColor+SystemColor.swift */; };
+		219263B11F30CE37009F0118 /* HSLColor+SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263AF1F30CE37009F0118 /* HSLColor+SystemColor.swift */; };
+		219263B21F30CE37009F0118 /* HSLColor+SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263AF1F30CE37009F0118 /* HSLColor+SystemColor.swift */; };
+		219263B31F30CE37009F0118 /* HSLColor+SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263AF1F30CE37009F0118 /* HSLColor+SystemColor.swift */; };
+		219263B51F30CF5E009F0118 /* RGBColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263B41F30CF5E009F0118 /* RGBColor+UIColor.swift */; };
+		219263B61F30CF5E009F0118 /* RGBColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263B41F30CF5E009F0118 /* RGBColor+UIColor.swift */; };
+		219263B71F30CF5E009F0118 /* RGBColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263B41F30CF5E009F0118 /* RGBColor+UIColor.swift */; };
+		219263B91F30D087009F0118 /* HSLColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263B81F30D087009F0118 /* HSLColor+UIColor.swift */; };
+		219263BA1F30D087009F0118 /* HSLColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263B81F30D087009F0118 /* HSLColor+UIColor.swift */; };
+		219263BB1F30D087009F0118 /* HSLColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219263B81F30D087009F0118 /* HSLColor+UIColor.swift */; };
 		21BBCF0A1F1C833000AF9F14 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BBCF001F1C833000AF9F14 /* Color.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +118,13 @@
 		21292D531F1EB0E9000BC512 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21292D601F1EB0F3000BC512 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21292D681F1EB0F3000BC512 /* ColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		219263A11F30CC16009F0118 /* RGBColor+NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RGBColor+NSColor.swift"; sourceTree = "<group>"; };
+		219263A31F30CC3E009F0118 /* HSLColor+NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSLColor+NSColor.swift"; sourceTree = "<group>"; };
+		219263A51F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConformanceLevel+CoreGraphics.swift"; sourceTree = "<group>"; };
+		219263AA1F30CE06009F0118 /* RGBColor+SystemColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RGBColor+SystemColor.swift"; sourceTree = "<group>"; };
+		219263AF1F30CE37009F0118 /* HSLColor+SystemColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSLColor+SystemColor.swift"; sourceTree = "<group>"; };
+		219263B41F30CF5E009F0118 /* RGBColor+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RGBColor+UIColor.swift"; sourceTree = "<group>"; };
+		219263B81F30D087009F0118 /* HSLColor+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HSLColor+UIColor.swift"; sourceTree = "<group>"; };
 		21BBCF001F1C833000AF9F14 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BBCF091F1C833000AF9F14 /* ColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -171,15 +198,9 @@
 		210C71C81F1EA93000A1B983 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				210C71C91F1EA93000A1B983 /* ConformanceLevel.swift */,
-				210C71CA1F1EA93000A1B983 /* HSLColor+Manipulation.swift */,
-				210C71CB1F1EA93000A1B983 /* HSLColor.swift */,
-				210C71CC1F1EA93000A1B983 /* RGBColor+CSS.swift */,
-				210C71CD1F1EA93000A1B983 /* RGBColor+Hex.swift */,
-				210C71CE1F1EA93000A1B983 /* RGBColor+WCAG.swift */,
-				210C71CF1F1EA93000A1B983 /* RGBColor+YIQ.swift */,
-				210C71D01F1EA93000A1B983 /* RGBColor.swift */,
-				210C71D11F1EA93000A1B983 /* SystemColor.swift */,
+				2192639E1F30CB69009F0118 /* RGB */,
+				219263A01F30CB7A009F0118 /* HSL */,
+				2192639F1F30CB73009F0118 /* Extensions */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -200,6 +221,43 @@
 				210C71E61F1EABD500A1B983 /* ColorTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		2192639E1F30CB69009F0118 /* RGB */ = {
+			isa = PBXGroup;
+			children = (
+				210C71D01F1EA93000A1B983 /* RGBColor.swift */,
+				210C71CC1F1EA93000A1B983 /* RGBColor+CSS.swift */,
+				210C71CD1F1EA93000A1B983 /* RGBColor+Hex.swift */,
+				210C71CE1F1EA93000A1B983 /* RGBColor+WCAG.swift */,
+				210C71CF1F1EA93000A1B983 /* RGBColor+YIQ.swift */,
+				219263A11F30CC16009F0118 /* RGBColor+NSColor.swift */,
+				219263B41F30CF5E009F0118 /* RGBColor+UIColor.swift */,
+				219263AA1F30CE06009F0118 /* RGBColor+SystemColor.swift */,
+				210C71C91F1EA93000A1B983 /* ConformanceLevel.swift */,
+				219263A51F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift */,
+			);
+			name = RGB;
+			sourceTree = "<group>";
+		};
+		2192639F1F30CB73009F0118 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				210C71D11F1EA93000A1B983 /* SystemColor.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		219263A01F30CB7A009F0118 /* HSL */ = {
+			isa = PBXGroup;
+			children = (
+				210C71CB1F1EA93000A1B983 /* HSLColor.swift */,
+				210C71CA1F1EA93000A1B983 /* HSLColor+Manipulation.swift */,
+				219263A31F30CC3E009F0118 /* HSLColor+NSColor.swift */,
+				219263B81F30D087009F0118 /* HSLColor+UIColor.swift */,
+				219263AF1F30CE37009F0118 /* HSLColor+SystemColor.swift */,
+			);
+			name = HSL;
 			sourceTree = "<group>";
 		};
 		21BBCEF61F1C833000AF9F14 = {
@@ -511,12 +569,17 @@
 			files = (
 				21292D8E1F1EB112000BC512 /* HSLColor.swift in Sources */,
 				21292D8D1F1EB112000BC512 /* HSLColor+Manipulation.swift in Sources */,
+				219263AC1F30CE06009F0118 /* RGBColor+SystemColor.swift in Sources */,
+				219263B91F30D087009F0118 /* HSLColor+UIColor.swift in Sources */,
+				219263A71F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift in Sources */,
 				21292D941F1EB112000BC512 /* SystemColor.swift in Sources */,
 				21292D8C1F1EB112000BC512 /* ConformanceLevel.swift in Sources */,
 				21292D931F1EB112000BC512 /* RGBColor.swift in Sources */,
 				21292D911F1EB112000BC512 /* RGBColor+WCAG.swift in Sources */,
 				21292D921F1EB112000BC512 /* RGBColor+YIQ.swift in Sources */,
+				219263B51F30CF5E009F0118 /* RGBColor+UIColor.swift in Sources */,
 				21292D8F1F1EB112000BC512 /* RGBColor+CSS.swift in Sources */,
+				219263B11F30CE37009F0118 /* HSLColor+SystemColor.swift in Sources */,
 				21292D901F1EB112000BC512 /* RGBColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,12 +598,17 @@
 			files = (
 				21292D851F1EB112000BC512 /* HSLColor.swift in Sources */,
 				21292D841F1EB112000BC512 /* HSLColor+Manipulation.swift in Sources */,
+				219263AD1F30CE06009F0118 /* RGBColor+SystemColor.swift in Sources */,
+				219263BA1F30D087009F0118 /* HSLColor+UIColor.swift in Sources */,
+				219263A81F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift in Sources */,
 				21292D8B1F1EB112000BC512 /* SystemColor.swift in Sources */,
 				21292D831F1EB112000BC512 /* ConformanceLevel.swift in Sources */,
 				21292D8A1F1EB112000BC512 /* RGBColor.swift in Sources */,
 				21292D881F1EB112000BC512 /* RGBColor+WCAG.swift in Sources */,
 				21292D891F1EB112000BC512 /* RGBColor+YIQ.swift in Sources */,
+				219263B61F30CF5E009F0118 /* RGBColor+UIColor.swift in Sources */,
 				21292D861F1EB112000BC512 /* RGBColor+CSS.swift in Sources */,
+				219263B21F30CE37009F0118 /* HSLColor+SystemColor.swift in Sources */,
 				21292D871F1EB112000BC512 /* RGBColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,12 +619,17 @@
 			files = (
 				21292D7C1F1EB111000BC512 /* HSLColor.swift in Sources */,
 				21292D7B1F1EB111000BC512 /* HSLColor+Manipulation.swift in Sources */,
+				219263AE1F30CE06009F0118 /* RGBColor+SystemColor.swift in Sources */,
+				219263BB1F30D087009F0118 /* HSLColor+UIColor.swift in Sources */,
+				219263A91F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift in Sources */,
 				21292D821F1EB111000BC512 /* SystemColor.swift in Sources */,
 				21292D7A1F1EB111000BC512 /* ConformanceLevel.swift in Sources */,
 				21292D811F1EB111000BC512 /* RGBColor.swift in Sources */,
 				21292D7F1F1EB111000BC512 /* RGBColor+WCAG.swift in Sources */,
 				21292D801F1EB111000BC512 /* RGBColor+YIQ.swift in Sources */,
+				219263B71F30CF5E009F0118 /* RGBColor+UIColor.swift in Sources */,
 				21292D7D1F1EB111000BC512 /* RGBColor+CSS.swift in Sources */,
+				219263B31F30CE37009F0118 /* HSLColor+SystemColor.swift in Sources */,
 				21292D7E1F1EB111000BC512 /* RGBColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,8 +648,13 @@
 			files = (
 				210C71DA1F1EA93000A1B983 /* HSLColor.swift in Sources */,
 				210C71D91F1EA93000A1B983 /* HSLColor+Manipulation.swift in Sources */,
+				219263B01F30CE37009F0118 /* HSLColor+SystemColor.swift in Sources */,
+				219263A61F30CCAB009F0118 /* ConformanceLevel+CoreGraphics.swift in Sources */,
 				210C71E01F1EA93000A1B983 /* SystemColor.swift in Sources */,
 				210C71D81F1EA93000A1B983 /* ConformanceLevel.swift in Sources */,
+				219263AB1F30CE06009F0118 /* RGBColor+SystemColor.swift in Sources */,
+				219263A21F30CC16009F0118 /* RGBColor+NSColor.swift in Sources */,
+				219263A41F30CC3E009F0118 /* HSLColor+NSColor.swift in Sources */,
 				210C71DF1F1EA93000A1B983 /* RGBColor.swift in Sources */,
 				210C71DD1F1EA93000A1B983 /* RGBColor+WCAG.swift in Sources */,
 				210C71DE1F1EA93000A1B983 /* RGBColor+YIQ.swift in Sources */,
