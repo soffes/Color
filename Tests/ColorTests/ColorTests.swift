@@ -22,18 +22,18 @@ final class ColorTests: XCTestCase {
 	let color2 = RGBColor(red: 34.0 / 255.0, green: 34.0 / 255.0, blue: 51.0 / 255.0)
 
 	func testRelativeLuminance() {
-		XCTAssertEqualWithAccuracy(0.589, color1.relativeLuminance, accuracy: 0.001)
-		XCTAssertEqualWithAccuracy(0.017, color2.relativeLuminance, accuracy: 0.001)
+		XCTAssertEqual(0.589, color1.relativeLuminance, accuracy: 0.001)
+		XCTAssertEqual(0.017, color2.relativeLuminance, accuracy: 0.001)
 	}
 
 	func testContrastRatio() {
-		XCTAssertEqualWithAccuracy(9.51, color1.contrastRatio(to: color2), accuracy: 0.01)
-		XCTAssertEqualWithAccuracy(9.51, color2.contrastRatio(to: color1), accuracy: 0.01)
+		XCTAssertEqual(9.51, color1.contrastRatio(to: color2), accuracy: 0.01)
+		XCTAssertEqual(9.51, color2.contrastRatio(to: color1), accuracy: 0.01)
 	}
 
 	func testYIQ() {
-		XCTAssertEqualWithAccuracy(199.648, color1.yiqLuma, accuracy: 0.001)
-		XCTAssertEqualWithAccuracy(35.938, color2.yiqLuma, accuracy: 0.001)
+		XCTAssertEqual(199.648, color1.yiqLuma, accuracy: 0.001)
+		XCTAssertEqual(35.938, color2.yiqLuma, accuracy: 0.001)
 	}
 
 	func testIsDark() {
@@ -66,8 +66,8 @@ final class ColorTests: XCTestCase {
 		let rgb = RGBColor(red: 0.941, green: 0.785, blue: 0.053)
 		let hsl = HSLColor(hue: 49.5 / 360, saturation: 0.893, lightness: 0.497)
 		let converted = HSLColor(rgb: rgb)
-		XCTAssertEqualWithAccuracy(hsl.hue, converted.hue, accuracy: 0.1)
-		XCTAssertEqualWithAccuracy(hsl.saturation, converted.saturation, accuracy: 0.1)
-		XCTAssertEqualWithAccuracy(hsl.lightness, converted.lightness, accuracy: 0.1)
+		XCTAssertEqual(hsl.hue, converted.hue, accuracy: 0.1)
+		XCTAssertEqual(hsl.saturation, converted.saturation, accuracy: 0.1)
+		XCTAssertEqual(hsl.lightness, converted.lightness, accuracy: 0.1)
 	}
 }
