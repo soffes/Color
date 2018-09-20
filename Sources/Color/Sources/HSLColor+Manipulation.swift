@@ -1,11 +1,3 @@
-//
-//  HSLColor+Manipulation.swift
-//  Color
-//
-//  Created by Sam Soffes on 7/18/17.
-//  Copyright © 2017 Sam Soffes. All rights reserved.
-//
-
 extension HSLColor {
 	public mutating func lighten(by ratio: Double = 0.01) {
 		lightness += lightness * ratio

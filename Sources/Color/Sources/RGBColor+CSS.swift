@@ -1,11 +1,3 @@
-//
-//  RGBColor+CSS.swift
-//  Color
-//
-//  Created by Sam Soffes on 7/18/17.
-//  Copyright © 2017 Sam Soffes. All rights reserved.
-//
-
 #if !os(Linux)
 	/// From https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
 	extension RGBColor {

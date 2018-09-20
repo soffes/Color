@@ -1,11 +1,3 @@
-//
-//  Score.swift
-//  Contrast
-//
-//  Created by Sam Soffes on 6/28/17.
-//  Copyright © 2017 Nothing Magical, Inc. All rights reserved.
-//
-
 /// Derived from the Web Content Accessibility Guidelines (WCAG) 2.0 conformance 
 ///
 /// From https://www.w3.org/TR/WCAG20

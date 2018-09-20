@@ -1,11 +1,3 @@
-//
-//  RGBColor.swift
-//  Color
-//
-//  Created by Sam Soffes on 6/28/17.
-//  Copyright © 2017 Sam Soffes. All rights reserved.
-//
-
 /// Portable, pure Swift color representation.
 public struct RGBColor {
 
