@@ -11,7 +11,7 @@
 
 	extension RGBColor {
 		public init(_ color: NSColor, colorSpace: NSColorSpace = .genericRGB) {
-			if colorSpace.colorSpaceModel != .RGB {
+			if colorSpace.colorSpaceModel != .rgb {
 				fatalError("Color space must have RGB model.")
 			}
 
@@ -37,7 +37,7 @@
 	
 	extension NSColor {
 		public convenience init(rgb color: RGBColor, colorSpace: NSColorSpace = .genericRGB) {
-			if colorSpace.colorSpaceModel != .RGB {
+			if colorSpace.colorSpaceModel != .rgb {
 				fatalError("Color space must have RGB model.")
 			}
 
