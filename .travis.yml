@@ -4,6 +4,7 @@ matrix:
   - os: linux
     sudo: required
     dist: trusty
+    language: generic
     install:
       - sudo apt-get install -y git python-dev libcurl3 clang
       - git clone https://github.com/kylef/swiftenv.git ~/.swiftenv
