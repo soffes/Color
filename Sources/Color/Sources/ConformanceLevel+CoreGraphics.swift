@@ -1,5 +1,9 @@
 #if os(OSX) || os(iOS) || os(watchOS) || os(tvOS)
-	import QuartzCore
+#if os(iOS) || os(watchOS) || os(tvOS)
+    import CoreGraphics
+#else
+    import QuartzCore
+#endif
 	
 	extension ConformanceLevel {
 		public init(contrastRatio: CGFloat) {

@@ -38,3 +38,9 @@ matrix:
     osx_image: xcode10
     install: gem install xcpretty
     script: xcodebuild test -project Color.xcodeproj -scheme Color-tvOS -destination "platform=tvOS Simulator,name=Apple TV 4K (at 1080p)" | xcpretty --color; exit ${PIPESTATUS[0]}
+
+  # watchOS
+  - os: osx
+    osx_image: xcode10
+    install: gem install xcpretty
+    script: xcodebuild build -project Color.xcodeproj -scheme Color-watchOS -destination "platform=watchOS Simulator,name=Apple Watch Series 4 - 40mm" | xcpretty --color; exit ${PIPESTATUS[0]}

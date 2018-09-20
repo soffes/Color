@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'Color'
-  spec.version = '0.1.0'
+  spec.version = '0.1.1'
   spec.authors = {'Sam Soffes' => 'sam@soff.es'}
   spec.homepage = 'https://github.com/soffes/Color'
   spec.summary = 'Color utilities'
@@ -13,5 +13,5 @@ Pod::Spec.new do |spec|
   spec.watchos.deployment_target = '2.0'
   spec.tvos.deployment_target = '9.0'
 
-  spec.source_files = 'Color/**/*.{swift}'
+  spec.source_files = 'Sources/Color/**/*.{swift}'
 end

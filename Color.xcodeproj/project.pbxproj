@@ -246,22 +246,22 @@
 		21D2D4EC215361D5001C1D11 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				21D2D4ED215361D5001C1D11 /* HSLColor.swift */,
-				21D2D4EE215361D5001C1D11 /* RGBColor+YIQ.swift */,
-				21D2D4EF215361D5001C1D11 /* RGBColor+NSColor.swift */,
-				21D2D4F0215361D5001C1D11 /* RGBColor+UIColor.swift */,
 				21D2D4F1215361D5001C1D11 /* ConformanceLevel.swift */,
-				21D2D4F2215361D5001C1D11 /* RGBColor+WCAG.swift */,
-				21D2D4F3215361D5001C1D11 /* HSLColor+UIColor.swift */,
-				21D2D4F4215361D5001C1D11 /* HSLColor+NSColor.swift */,
-				21D2D4F5215361D5001C1D11 /* RGBColor+Hex.swift */,
-				21D2D4F6215361D5001C1D11 /* RGBColor+SystemColor.swift */,
-				21D2D4F7215361D5001C1D11 /* HSLColor+Manipulation.swift */,
 				21D2D4F8215361D5001C1D11 /* ConformanceLevel+CoreGraphics.swift */,
-				21D2D4F9215361D5001C1D11 /* RGBColor+CSS.swift */,
+				21D2D4ED215361D5001C1D11 /* HSLColor.swift */,
+				21D2D4F7215361D5001C1D11 /* HSLColor+Manipulation.swift */,
+				21D2D4F4215361D5001C1D11 /* HSLColor+NSColor.swift */,
 				21D2D4FA215361D5001C1D11 /* HSLColor+SystemColor.swift */,
-				21D2D4FB215361D5001C1D11 /* SystemColor.swift */,
+				21D2D4F3215361D5001C1D11 /* HSLColor+UIColor.swift */,
 				21D2D4FC215361D5001C1D11 /* RGBColor.swift */,
+				21D2D4F9215361D5001C1D11 /* RGBColor+CSS.swift */,
+				21D2D4F5215361D5001C1D11 /* RGBColor+Hex.swift */,
+				21D2D4EF215361D5001C1D11 /* RGBColor+NSColor.swift */,
+				21D2D4F6215361D5001C1D11 /* RGBColor+SystemColor.swift */,
+				21D2D4F0215361D5001C1D11 /* RGBColor+UIColor.swift */,
+				21D2D4F2215361D5001C1D11 /* RGBColor+WCAG.swift */,
+				21D2D4EE215361D5001C1D11 /* RGBColor+YIQ.swift */,
+				21D2D4FB215361D5001C1D11 /* SystemColor.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
