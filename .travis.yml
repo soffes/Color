@@ -2,43 +2,38 @@ matrix:
   include:
   # Linux
   - os: linux
-    language: swift
     sudo: required
     dist: trusty
     install:
-    - sudo apt-get install -y git python-dev libcurl3 clang
-    - git clone https://github.com/kylef/swiftenv.git ~/.swiftenv
-    - echo 'export SWIFTENV_ROOT="$HOME/.swiftenv"' >> ~/.bash_profile
-    - echo 'export PATH="$SWIFTENV_ROOT/bin:$PATH"' >> ~/.bash_profile
-    - echo 'eval "$(swiftenv init -)"' >> ~/.bash_profile
-    - source ~/.bash_profile
-    - swiftenv install 4.2
+      - sudo apt-get install -y git python-dev libcurl3 clang
+      - git clone https://github.com/kylef/swiftenv.git ~/.swiftenv
+      - echo 'export SWIFTENV_ROOT="$HOME/.swiftenv"' >> ~/.bash_profile
+      - echo 'export PATH="$SWIFTENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+      - echo 'eval "$(swiftenv init -)"' >> ~/.bash_profile
+      - source ~/.bash_profile
+      - swiftenv install 4.2
     script:
-    - swift test
+      - swift test
 
   # Darwin
   - os: osx
-    language: swift
     osx_image: xcode10
     script: swift test
 
   # macOS
   - os: osx
-    language: swift
     osx_image: xcode10
     install: gem install xcpretty
     script: xcodebuild test -project Color.xcodeproj -scheme Color-macOS | xcpretty --color; exit ${PIPESTATUS[0]}
 
   # iOS
   - os: osx
-    language: swift
     osx_image: xcode10
     install: gem install xcpretty
     script: xcodebuild test -project Color.xcodeproj -scheme Color-iOS -destination "platform=iOS Simulator,name=iPhone SE" | xcpretty --color; exit ${PIPESTATUS[0]}
 
   # tvOS
   - os: osx
-    language: swift
     osx_image: xcode10
     install: gem install xcpretty
     script: xcodebuild test -project Color.xcodeproj -scheme Color-tvOS -destination "platform=tvOS Simulator,name=Apple TV 4K (at 1080p)" | xcpretty --color; exit ${PIPESTATUS[0]}
