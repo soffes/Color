@@ -1,7 +1,7 @@
 # Color
 
 [![Version](https://img.shields.io/github/release/soffes/Color.svg)](https://github.com/soffes/Color/releases)
-[![Build Status](https://travis-ci.org/soffes/Color.svg?branch=master)](https://travis-ci.org/soffes/Color)
+[![Build Status](https://github.com/soffes/Color/workflows/Tests/badge.svg)](https://github.com/soffes/Color/actions)
 ![Swift Version](https://img.shields.io/badge/swift-5.0.1-orange.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
