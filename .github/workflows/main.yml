@@ -12,7 +12,7 @@ jobs:
       - name: 'Test'
         run: swift test
   test-macos:
-    name: Test Swift Package
+    name: Test macOS
     runs-on: macOS-10.14
     timeout-minutes: 10
     steps:
