@@ -1,4 +1,4 @@
-public struct HSLColor {
+public struct HSLColor: Equatable {
 
 	// MARK: - Properties
 
@@ -57,12 +57,5 @@ public struct HSLColor {
 		}
 
 		self.init(hue: hue, saturation: saturation, lightness: lightness)
-	}
-}
-
-
-extension HSLColor: Equatable {
-	public static func == (lhs: HSLColor, rhs: HSLColor) -> Bool {
-		return lhs.hue == rhs.hue && lhs.saturation == rhs.saturation && lhs.lightness == rhs.lightness
 	}
 }

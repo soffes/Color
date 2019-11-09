@@ -1,5 +1,5 @@
 /// Portable, pure Swift color representation.
-public struct RGBColor {
+public struct RGBColor: Equatable {
 
 	// MARK: - Properties
 
@@ -11,12 +11,18 @@ public struct RGBColor {
 	// MARK: - Initializers
 
 	public init(red: Double, green: Double, blue: Double) {
+        precondition(red >= 0 && red <= 1)
+        precondition(green >= 0 && green <= 1)
+        precondition(blue >= 0 && blue <= 1)
+
 		self.red = red
 		self.green = green
 		self.blue = blue
 	}
 
 	public init(white: Double) {
+        precondition(white >= 0 && white <= 1)
+
 		self.init(red: white, green: white, blue: white)
 	}
 
@@ -71,12 +77,5 @@ public struct RGBColor {
 		}
 
 		self.init(red: rgb[0], green: rgb[1], blue: rgb[2])
-	}
-}
-
-
-extension RGBColor: Equatable {
-	public static func == (lhs: RGBColor, rhs: RGBColor) -> Bool {
-		return lhs.red == rhs.red && lhs.green == rhs.green && lhs.blue == rhs.blue
 	}
 }

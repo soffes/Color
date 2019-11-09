@@ -1,7 +1,7 @@
 #if os(Linux)
-	import Glibc
+import Glibc
 #else
-	import Darwin
+import Darwin
 #endif
 
 extension RGBColor {
