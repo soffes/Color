@@ -37,11 +37,17 @@ final class ColorTests: XCTestCase {
 
         let purple = RGBColor(red: 110.0 / 255.0, green: 61.0 / 255.0, blue: 195.0 / 255.0)
         XCTAssertEqual("6e3dc3", purple.hex)
+
+        let mdsGreen = RGBColor(red: 46.0 / 255.0, green: 229.0 / 255.0, blue: 168.0 / 255.0)
+        XCTAssertEqual("2ee5a8", mdsGreen.hex)
     }
 
     func testFromHex() {
         let purple = RGBColor(hex: "6e3dc3")!
         XCTAssertEqual(purple, RGBColor(red: 110 / 255, green: 61 / 255, blue: 195 / 255))
+
+        let mdsGreen = RGBColor(hex: "2ee5a8")!
+        XCTAssertEqual(mdsGreen, RGBColor(red: 46 / 255, green: 229 / 255, blue: 168 / 255))
     }
 
 	func testConvertToHSL() {

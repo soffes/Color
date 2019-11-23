@@ -41,6 +41,6 @@ extension RGBColor {
 
     /// Hex string representation
     public var hex: String {
-        String(format: "%02x%02x%02x", Int(ceil(red * 255)), Int(ceil(green * 255)), Int(ceil(blue * 255)))
+        String(format: "%02x%02x%02x", Int(floor(red * 255)), Int(floor(green * 255)), Int(floor(blue * 255)))
     }
 }
