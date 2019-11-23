@@ -2,14 +2,6 @@ import XCTest
 import Color
 
 final class ColorTests: XCTestCase {
-	static let allTests = [
-		("testRelativeLuminance", testRelativeLuminance),
-		("testContrastRatio", testContrastRatio),
-		("testYIQ", testYIQ),
-		("testIsDark", testIsDark),
-		("testConvertToHSL", testConvertToHSL)
-	]
-
 	let color1 = RGBColor(red: 170.0 / 255.0, green: 204.0 / 255.0, blue: 1)
 	let color2 = RGBColor(red: 34.0 / 255.0, green: 34.0 / 255.0, blue: 51.0 / 255.0)
 
