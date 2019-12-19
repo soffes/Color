@@ -3,7 +3,7 @@ on: [push]
 jobs:
   test-swift-package:
     name: Test Swift Package
-    runs-on: macOS-10.15.1
+    runs-on: macos-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v1
@@ -13,7 +13,7 @@ jobs:
         run: swift test
   test-macos:
     name: Test macOS
-    runs-on: macOS-10.15.1
+    runs-on: macos-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v1
@@ -23,7 +23,7 @@ jobs:
         run: xcodebuild test -project Color.xcodeproj -scheme Color-macOS | xcpretty --color; exit ${PIPESTATUS[0]}
   test-ios:
     name: Test iOS
-    runs-on: macOS-10.15.1
+    runs-on: macos-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v1
@@ -33,7 +33,7 @@ jobs:
         run: xcodebuild test -project Color.xcodeproj -scheme Color-iOS -destination "platform=iOS Simulator,name=iPhone SE" | xcpretty --color; exit ${PIPESTATUS[0]}
   test-tvos:
     name: Test tvOS
-    runs-on: macOS-10.15.1
+    runs-on: macos-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v1
@@ -43,7 +43,7 @@ jobs:
         run: xcodebuild test -project Color.xcodeproj -scheme Color-tvOS -destination "platform=tvOS Simulator,name=Apple TV 4K (at 1080p)" | xcpretty --color; exit ${PIPESTATUS[0]}
   test-watchos:
     name: Build watchOS
-    runs-on: macOS-10.15.1
+    runs-on: macos-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v1
