@@ -3,51 +3,51 @@ on: [push]
 jobs:
   test-swift-package:
     name: Test Swift Package
-    runs-on: macOS-10.14
+    runs-on: macOS-10.15
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v1
-      - name: 'Select Xcode 10.3'
-        run: sudo xcode-select -s /Applications/Xcode_10.3.app
+      - name: 'Select Xcode 11.2.1'
+        run: sudo xcode-select -s /Applications/Xcode_11.2.1.app
       - name: 'Test'
         run: swift test
   test-macos:
     name: Test macOS
-    runs-on: macOS-10.14
+    runs-on: macOS-10.15
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v1
-      - name: 'Select Xcode 10.3'
-        run: sudo xcode-select -s /Applications/Xcode_10.3.app
+      - name: 'Select Xcode 11.2.1'
+        run: sudo xcode-select -s /Applications/Xcode_11.2.1.app
       - name: 'Test'
         run: xcodebuild test -project Color.xcodeproj -scheme Color-macOS | xcpretty --color; exit ${PIPESTATUS[0]}
   test-ios:
     name: Test iOS
-    runs-on: macOS-10.14
+    runs-on: macOS-10.15
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v1
-      - name: 'Select Xcode 10.3'
-        run: sudo xcode-select -s /Applications/Xcode_10.3.app
+      - name: 'Select Xcode 11.2.1'
+        run: sudo xcode-select -s /Applications/Xcode_11.2.1.app
       - name: 'Test'
         run: xcodebuild test -project Color.xcodeproj -scheme Color-iOS -destination "platform=iOS Simulator,name=iPhone SE" | xcpretty --color; exit ${PIPESTATUS[0]}
   test-tvos:
     name: Test tvOS
-    runs-on: macOS-10.14
+    runs-on: macOS-10.15
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v1
-      - name: 'Select Xcode 10.3'
-        run: sudo xcode-select -s /Applications/Xcode_10.3.app
+      - name: 'Select Xcode 11.2.1'
+        run: sudo xcode-select -s /Applications/Xcode_11.2.1.app
       - name: 'Test'
         run: xcodebuild test -project Color.xcodeproj -scheme Color-tvOS -destination "platform=tvOS Simulator,name=Apple TV 4K (at 1080p)" | xcpretty --color; exit ${PIPESTATUS[0]}
   test-watchos:
     name: Build watchOS
-    runs-on: macOS-10.14
+    runs-on: macOS-10.15
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v1
-      - name: 'Select Xcode 10.3'
-        run: sudo xcode-select -s /Applications/Xcode_10.3.app
+      - name: 'Select Xcode 11.2.1'
+        run: sudo xcode-select -s /Applications/Xcode_11.2.1.app
       - name: 'Build'
         run: xcodebuild build -project Color.xcodeproj -scheme Color-watchOS -destination "platform=watchOS Simulator,name=Apple Watch Series 4 - 40mm" | xcpretty --color; exit ${PIPESTATUS[0]}
