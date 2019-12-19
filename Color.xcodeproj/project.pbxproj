@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2116D96723AB0CCC00FD77BD /* RGBColor+Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116D96623AB0CCC00FD77BD /* RGBColor+Temperature.swift */; };
+		2116D96823AB0CCC00FD77BD /* RGBColor+Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116D96623AB0CCC00FD77BD /* RGBColor+Temperature.swift */; };
+		2116D96923AB0CCC00FD77BD /* RGBColor+Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116D96623AB0CCC00FD77BD /* RGBColor+Temperature.swift */; };
+		2116D96A23AB0CCC00FD77BD /* RGBColor+Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116D96623AB0CCC00FD77BD /* RGBColor+Temperature.swift */; };
+		2116D96C23AB0D2E00FD77BD /* TemperatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116D96B23AB0D2E00FD77BD /* TemperatureTests.swift */; };
+		2116D96D23AB0D2E00FD77BD /* TemperatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116D96B23AB0D2E00FD77BD /* TemperatureTests.swift */; };
+		2116D96E23AB0D2E00FD77BD /* TemperatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116D96B23AB0D2E00FD77BD /* TemperatureTests.swift */; };
 		21292D401F1EB0C4000BC512 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21292D371F1EB0C4000BC512 /* Color.framework */; };
 		21292D691F1EB0F3000BC512 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21292D601F1EB0F3000BC512 /* Color.framework */; };
+		2169E17623AB0FD500AFDA6B /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169E17523AB0FD500AFDA6B /* TestHelper.swift */; };
+		2169E17723AB0FD500AFDA6B /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169E17523AB0FD500AFDA6B /* TestHelper.swift */; };
+		2169E17823AB0FD500AFDA6B /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2169E17523AB0FD500AFDA6B /* TestHelper.swift */; };
 		21BBCF0A1F1C833000AF9F14 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BBCF001F1C833000AF9F14 /* Color.framework */; };
 		21D2D501215361D5001C1D11 /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D2D4EA215361D5001C1D11 /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21D2D502215361D5001C1D11 /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D2D4EA215361D5001C1D11 /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -108,11 +118,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2116D96623AB0CCC00FD77BD /* RGBColor+Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBColor+Temperature.swift"; sourceTree = "<group>"; };
+		2116D96B23AB0D2E00FD77BD /* TemperatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureTests.swift; sourceTree = "<group>"; };
 		21292D371F1EB0C4000BC512 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21292D3F1F1EB0C4000BC512 /* ColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21292D531F1EB0E9000BC512 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21292D601F1EB0F3000BC512 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21292D681F1EB0F3000BC512 /* ColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2169E17523AB0FD500AFDA6B /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		21BBCF001F1C833000AF9F14 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BBCF091F1C833000AF9F14 /* ColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D2D4E9215361D5001C1D11 /* Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
@@ -261,6 +274,7 @@
 				21D2D4F0215361D5001C1D11 /* RGBColor+UIColor.swift */,
 				21D2D4F2215361D5001C1D11 /* RGBColor+WCAG.swift */,
 				21D2D4EE215361D5001C1D11 /* RGBColor+YIQ.swift */,
+				2116D96623AB0CCC00FD77BD /* RGBColor+Temperature.swift */,
 				21D2D4FB215361D5001C1D11 /* SystemColor.swift */,
 			);
 			path = Sources;
@@ -278,6 +292,8 @@
 			isa = PBXGroup;
 			children = (
 				21D2D54C215361DD001C1D11 /* ColorTests.swift */,
+				2116D96B23AB0D2E00FD77BD /* TemperatureTests.swift */,
+				2169E17523AB0FD500AFDA6B /* TestHelper.swift */,
 			);
 			path = ColorTests;
 			sourceTree = "<group>";
@@ -569,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21D2D52E215361D5001C1D11 /* RGBColor+SystemColor.swift in Sources */,
+				2116D96823AB0CCC00FD77BD /* RGBColor+Temperature.swift in Sources */,
 				21D2D53A215361D5001C1D11 /* RGBColor+CSS.swift in Sources */,
 				21D2D53E215361D5001C1D11 /* HSLColor+SystemColor.swift in Sources */,
 				21D2D546215361D5001C1D11 /* RGBColor.swift in Sources */,
@@ -591,6 +608,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2169E17723AB0FD500AFDA6B /* TestHelper.swift in Sources */,
+				2116D96D23AB0D2E00FD77BD /* TemperatureTests.swift in Sources */,
 				21D2D551215361DD001C1D11 /* ColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +619,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21D2D52F215361D5001C1D11 /* RGBColor+SystemColor.swift in Sources */,
+				2116D96923AB0CCC00FD77BD /* RGBColor+Temperature.swift in Sources */,
 				21D2D53B215361D5001C1D11 /* RGBColor+CSS.swift in Sources */,
 				21D2D53F215361D5001C1D11 /* HSLColor+SystemColor.swift in Sources */,
 				21D2D547215361D5001C1D11 /* RGBColor.swift in Sources */,
@@ -623,6 +643,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21D2D530215361D5001C1D11 /* RGBColor+SystemColor.swift in Sources */,
+				2116D96A23AB0CCC00FD77BD /* RGBColor+Temperature.swift in Sources */,
 				21D2D53C215361D5001C1D11 /* RGBColor+CSS.swift in Sources */,
 				21D2D540215361D5001C1D11 /* HSLColor+SystemColor.swift in Sources */,
 				21D2D548215361D5001C1D11 /* RGBColor.swift in Sources */,
@@ -645,6 +666,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2169E17823AB0FD500AFDA6B /* TestHelper.swift in Sources */,
+				2116D96E23AB0D2E00FD77BD /* TemperatureTests.swift in Sources */,
 				21D2D552215361DD001C1D11 /* ColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,6 +677,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21D2D52D215361D5001C1D11 /* RGBColor+SystemColor.swift in Sources */,
+				2116D96723AB0CCC00FD77BD /* RGBColor+Temperature.swift in Sources */,
 				21D2D539215361D5001C1D11 /* RGBColor+CSS.swift in Sources */,
 				21D2D53D215361D5001C1D11 /* HSLColor+SystemColor.swift in Sources */,
 				21D2D545215361D5001C1D11 /* RGBColor.swift in Sources */,
@@ -676,6 +700,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2169E17623AB0FD500AFDA6B /* TestHelper.swift in Sources */,
+				2116D96C23AB0D2E00FD77BD /* TemperatureTests.swift in Sources */,
 				21D2D550215361DD001C1D11 /* ColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
