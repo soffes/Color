@@ -18,7 +18,7 @@ extension RGBColor {
             return nil
         }
 
-        // Make the string 8 characters long for easier parsing
+        // Make the string 6 characters long for easier parsing
         if length == 3 {
             let r = hex[hex.startIndex..<hex.index(hex.startIndex, offsetBy: 1)]
             let g = hex[hex.index(hex.startIndex, offsetBy: 1)..<hex.index(hex.startIndex, offsetBy: 2)]
